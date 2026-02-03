@@ -187,62 +187,35 @@ span{
 
 }
 
-.typing-text{
+
+.typing-text {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
   white-space: nowrap;
 
+  display: inline-flex;       /* make span align properly */
+  align-items: center;        /* vertically center */
 }
 
-.typing-text span{
-  position: relative;
+
+.typing-text span {
   display: inline-block;
-
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black; /* cursor */
+  animation: blink 0.7s infinite;
+  line-height: 1;
+  margin-left: 0.5rem; 
 }
 
-.typing-text span::before{
-  content: "Software Developer";
-  color: rgb(0, 0, 0);
-  animation: words 20s infinite;
+/* blinking cursor */
+@keyframes blink {
+  0%, 100% { border-color: black; }
+  50% { border-color: transparent; }
 }
 
-.typing-text span::after{
-  content: "";
-  background-color: rgb(0, 0, 0);
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  border-left: 3px solid aliceblue;
-  right: -8px;
-  animation: cursor 0.6s infinite;
 
-}
-
-@keyframes cursor{
-  to{
-    border-left: 3px solid aliceblue;
-  }
-}
-
-@keyframes words{
-  0%, 25%{
-    content: "CyberSecurity Certified";
-  }
-  26%, 50%{
-    content: "Software Developer";
-  
-  }
-  51%, 75%{
-    content:"Web Designer";
-  
-  }
-
-  76%, 100%{
-    content:"College Student";
-  }
- 
-}
 
 @media(max-width:1000px){
   .home{
