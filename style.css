@@ -748,6 +748,57 @@ section:hover .title span::after{
 }
 
 
+.site-footer{
+  margin-top: 60px;
+  padding: 26px 0;
+  background: rgba(255,255,255,0.9);
+  border-top: 1px solid rgba(3,36,85,0.15);
+  box-shadow: 0 -10px 30px rgba(3,36,85,0.08);
+}
+
+.footer-text{
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(3,36,85,0.75);
+}
+
+.footer-text a{
+  margin-left: 4px;
+  color: rgb(3,36,85);
+  font-weight: 800;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+
+.footer-text a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: rgb(3,36,85);
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+.footer-text a:hover{
+  color: rgb(3,36,85);
+}
+
+.footer-text a:hover::after{
+  width: 100%;
+}
+
+
+.site-footer:hover{
+  box-shadow: 0 -18px 45px rgba(3,36,85,0.15);
+}
+
+
+
 
 
 
