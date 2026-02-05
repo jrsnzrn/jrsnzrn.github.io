@@ -1,40 +1,58 @@
-const span = document.querySelector('.typing-text span');
-
-const words = [
-  "  CyberSecurity Certified",
-  "  Software Developer",
-  "  Web Designer",
-  "  College Student"
-];
-
-let wordIndex = 0;
-let letterIndex = 0;
-let isDeleting = false;
-
-function type() {
-  const currentWord = words[wordIndex];
-
-  if (!isDeleting) {
-    span.textContent = currentWord.substring(0, letterIndex + 1);
-    letterIndex++;
-
-    if (letterIndex === currentWord.length) {
-      isDeleting = true;
-      setTimeout(type, 1000); // pause at end
-      return;
-    }
-  } else {
-    span.textContent = currentWord.substring(0, letterIndex - 1);
-    letterIndex--;
-
-    if (letterIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-    }
-  }
-
-  const speed = isDeleting ? 50 : 150;
-  setTimeout(type, speed);
+// ===== DROPDOWN MENU =====
+function openMenu() {
+  document.querySelector(".dropdown").classList.add("active");
 }
 
-type();
+function closeMenu() {
+  document.querySelector(".dropdown").classList.remove("active");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".dropdown .links a").forEach(a => {
+    a.addEventListener("click", closeMenu);
+  });
+});
+
+
+// ===== TYPEWRITER ANIMATION =====
+document.addEventListener("DOMContentLoaded", () => {
+  const textElement = document.querySelector(".typewriter-text");
+
+  if (!textElement) return;
+
+  const words = [
+    "a Web Developer",
+    "Certified in CyberSecurity",
+    "a Programmer",
+    "an IT Student"
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+      charIndex++;
+      textElement.textContent = currentWord.substring(0, charIndex);
+
+      if (charIndex === currentWord.length) {
+        setTimeout(() => (isDeleting = true), 1200);
+      }
+    } else {
+      charIndex--;
+      textElement.textContent = currentWord.substring(0, charIndex);
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 100);
+  }
+
+  typeEffect();
+});
