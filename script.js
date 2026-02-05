@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       textElement.textContent = currentWord.substring(0, charIndex);
 
       if (charIndex === currentWord.length) {
-        setTimeout(() => (isDeleting = true), 1200);
+        setTimeout(() => (isDeleting = true), 1600);
+
       }
     } else {
       charIndex--;
@@ -51,7 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    setTimeout(typeEffect, isDeleting ? 60 : 100);
+    setTimeout(typeEffect, isDeleting ? 50 : 120);
+
   }
 
   typeEffect();

@@ -17,17 +17,17 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <span>My Portfolio</span>
-
+                <span class="logo-animate">My Portfolio</span>
             </div>
 
+
             <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About Me</a></div>
-                <div class="link"><a href="#">My Skills</a></div>
-                <div class="link"><a href="#">Certifications</a></div>
-                <div class="link"><a href="#">Projects</a></div>
-                <div class="link"><a href="#">Contacts</a></div>
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About Me</a></div>
+                <div class="link"><a href="#skills">My Skills</a></div>
+                <div class="link"><a href="#certifications">Certifications</a></div>
+                <div class="link"><a href="#projects">Projects</a></div>
+                <div class="link"><a href="#contact">Contacts</a></div>
 
             </div>
         </div> 
@@ -36,29 +36,31 @@
         <div class="dropdown">
             <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
             <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">My Skills</a>
-            <a href="#">Certifications</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">My Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contacts</a>
             </div>
 
         </div>
     
     </nav>
 
-    <section>
+    <section class=home id="home">
         <div class="main-container">
             <div class="image">
                 <img src="images/jairus.jpg" alt="">
 
             </div>
                     <div class="content">
-                        <h1 data-aos="fade left">
-                            Hey I'm
-                            <span>Jairus</span>
-                        </h1>
+                    <h1 class="hero-title">
+                    <span class="intro-text">Hey, I’m</span><br>
+                    <span class="name-text">Jairus</span>
+                    </h1>
+
+
                     
                     <div class="typewriter">
                         I'm
@@ -70,23 +72,22 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
                 
                     
                 <div class="social-links">
-                    <a href="#">
+                   <a href="https://github.com/jrsnzrn" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i>
-                        
-                    </a>
+                    </a>    
 
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/jairus-nazareno-61576b235" target="_blank" rel="noopener">
                         <i class="fa-brands fa-linkedin"></i>   
                     </a>
 
-                    <a href="#">
+                    <a href="https://x.com/kazutoriiiiiii" target="_blank" rel="noopener">
                         <i class="fa-brands fa-twitter"></i>
 
                     </a>
                 </div>
 
             <div class="btn">
-                <button>Hire me!</button>
+                <a href="mailto:jairusnazareno@gmail.com?subject=Project%20Inquiry&body=Hi%20Jairus,%0A%0AI%20would%20like%20to%20work%20with%20you."class="btn-link">Hire me!</a>
 
             </div>
         </div>
@@ -98,7 +99,7 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
     <section class="about" id="about">
         <div class="content">
             <div class="title"><span>About Me</span></div>
-             <div class="about-details">
+             <div class="about-details card-box">
                 <div class="left">
                     <img src="images/jairus.jpg" alt=""/>
                 </div>
@@ -106,7 +107,9 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
                         <div class="topic">My Passion</div>
                         <p>I am a passionate and creative web designer who enjoys turning ideas into visually appealing and user-friendly websites. I am also interested in cybersecurity and love learning how to protect systems, data, and users from online threats while continuously improving my technical skills.</p>
                     <div class="button">
-                        <button>Download CV</button>
+                     <a href="assests/Jairus-Nazareno-CV.pdf" download class="cv-btn">
+                            <i class="fa-solid fa-download"></i>Download CV</a>
+
                     </div>
                     </div>
 
@@ -136,25 +139,25 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
                     </div>
                 </div>
 
-                <div class="boxes">
+                <div class="boxes card-box">
                     <div class="box">
                         <div class="topic">HTML,CSS,JavaScript</div>
                         <div class="per">80%</div>
                     </div>
                 </div>
-                 <div class="boxes">
+                <div class="boxes card-box">
                     <div class="box">
                         <div class="topic">Networking</div>
                         <div class="per">75%</div>
                     </div>
                 </div>
-                 <div class="boxes">
+                 <div class="boxes card-box">
                     <div class="box">
                         <div class="topic">TroubleShooting</div>
                         <div class="per">70%</div>
                     </div>
                 </div>
-                 <div class="boxes">
+                 <div class="boxes card-box">
                     <div class="box">
                         <div class="topic">CyberSecurity</div>
                         <div class="per">80%</div>
@@ -170,7 +173,7 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
          <div class="content">
             <div class="title"><span>My Certifications</span></div>
                 
-            <div class="boxes">
+            <div class="boxes card-box">
                     <div class="icon">
                         <i class="fas fa-desktop"></i>
                     </div>
@@ -178,7 +181,7 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
                     <P> This certification demonstrates my knowledge of cybersecurity fundamentals, including network security, risk management, and protecting systems from cyber threats.</P>
             </div>
 
-             <div class="boxes">
+             <div class="boxes card-box">
                     <div class="icon">
                         <i class="fas fa-desktop"></i>
                     </div>
@@ -190,19 +193,67 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
 
 
 
-    <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Contact Me</span></div>
-        </div>
-        <div class="text">
-            <div class="topic">Do You Have Any Project For Me?</div>
-            <p> If you have any projects, ideas, or opportunities you would like to discuss, feel free to contact me. I am always open to collaborations and excited to work on creative and innovative solutions.</p>
-            <div class="button">
-                <button>Let's Chat!</button>
-            </div>
-        </div>
+ <section class="projects" id="projects">
+  <div class="content">
+    <div class="title"><span>Projects</span></div>
 
-    </section>
+    <div class="cards">
+      <div class="card">
+        <h3>Library Web System</h3>
+        <p>A web-based system for managing books, borrowing, and student records.</p>
+        <div class="card-actions">
+          <a class="card-btn" href="#" target="_blank">Live Demo</a>
+          <a class="card-btn outline" href="#" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio with dropdown nav and typewriter animation.</p>
+        <div class="card-actions">
+          <a class="card-btn" href="#" target="_blank">Live Demo</a>
+          <a class="card-btn outline" href="#" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity Mini Lab</h3>
+        <p>Basic security exercises: password policy, network checks, and logs review.</p>
+        <div class="card-actions">
+          <a class="card-btn" href="#" target="_blank">Details</a>
+          <a class="card-btn outline" href="#" target="_blank">Notes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+
+    <div class="contact-card card-box">
+      <h3>Have a project in mind?</h3>
+      <p>
+        I’m open to collaborations, internships, and freelance projects.
+        Let’s build something meaningful together.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:jairusnazareno@gmail.com" class="contact-btn">
+            <i class="fa-solid fa-envelope"></i> Email Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/jairus-nazareno-61576b235/" target="_blank" rel="noopener" class="contact-btn outline">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
     <footer>
