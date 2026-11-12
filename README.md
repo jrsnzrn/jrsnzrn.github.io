@@ -1,72 +1,57 @@
-# 🌐 Personal Portfolio Website
+# Jairus Nazareno — Portfolio
 
-This is my personal **portfolio website** built using **HTML, CSS, and JavaScript**.  
-It showcases my background as an **IT student**, my skills, certifications, and projects, and serves as my online professional profile.
+A custom, responsive portfolio built with HTML, CSS, and vanilla JavaScript for GitHub Pages.
 
----
+## Design & interactions
 
-## 🚀 Features
+- Dark graphite and electric lime visual system with expressive typography.
+- Personal portraits in the hero and About section.
+- CSS interface studies for four featured projects, plus two compact project entries.
+- Project filters: All work, Full stack, Security, Mobile, and Frontend.
+- Scroll reveals, rotating badges, floating labels, radar animation, a moving text strip, subtle card tilt, and magnetic links.
+- A small canvas constellation pauses when the hero is offscreen or the tab is hidden.
+- A persistent motion toggle and automatic support for the system’s reduced-motion setting.
+- Accessible mobile navigation with Escape dismissal, native keyboard controls, visible focus states, and a skip link.
 
-- 🎨 Clean and responsive design
-- ⌨️ Letter-by-letter **typing animation** using JavaScript
-- 🧑‍💻 Personal introduction and profile image
-- 🔗 Social media links (GitHub, LinkedIn)
-- 📱 Mobile-friendly layout
-- ⚡ Fast and lightweight (no frameworks)
+Project interface studies are illustrative compositions, not screenshots of the applications. Public links are included only where available.
 
----
+## Projects
 
-## 🛠️ Built With
+1. [TopDent — Dental Clinic System](https://topdent.website/) — [source code](https://github.com/jrsnzrn/dental-clinic-system-group).
+2. [CyberSafe PH](https://github.com/jrsnzrn/CyberSafe) — scam and phishing awareness MVP; includes prototype admin screens.
+3. Serin Calendar — a personal calendar I built for my wife, available as a local web/Android project; no published demo or source URL.
+4. [E-Commerce Shop](https://github.com/jrsnzrn/ecomerce_fullstack_v1) — ASP.NET Core and JavaScript e-commerce application.
+5. [Library Web System](https://github.com/jrsnzrn/library-web-system)
+6. [Portfolio Website](https://github.com/jrsnzrn/jrsnzrn.github.io)
 
-- **HTML5** – Structure and content  
-- **CSS3** – Styling and responsive layout  
-- **JavaScript** – Typing animation logic  
-- **Google Fonts (Poppins)**  
-- **Font Awesome** – Icons  
+The dental clinic application is featured once as TopDent, with its custom domain as the live link.
 
----
+## Local preview
 
-## 📂 Project Structure
-portfolio/
-├── index.html
-├── style.css
-├── script.js
-├── images/
-│ └── jairus.jpg
-└── README.md
+Open `index.html` in a browser, or serve the project folder:
 
+```powershell
+py -m http.server 5173
+```
 
-## ✨ Typing Animation
+Then visit `http://localhost:5173`.
 
-The typing effect is implemented using JavaScript to simulate:
-- Typing letters one by one
-- Pausing at the end of a word
-- Deleting letters
-- Looping through multiple roles
+No package installation or build step is required. Google Fonts enhance the typography; local fallback fonts are provided.
 
-Example roles:
-- CyberSecurity Certified
-- Software Developer
-- Web Designer
-- College Student
+## Structure
 
+```text
+index.html
+style.css
+script.js
+images/
+  favicon.svg
+  jairus-portrait.png
+  jairus-about.png
+assests/
+  Jairus-Nazareno-CV.pdf.pdf
+```
 
-## 🌍 Live Demo
+## Publishing
 
-If deployed using **GitHub Pages**, you can view the site here:
-
-https://jrsnzrn.github.io/
-
-## Project showcase
-
-The portfolio includes these seven entries. The group capstone and original dental clinic application are listed separately as distinct versions.
-
-- **Dental Clinic System — Group Capstone** — https://github.com/jrsnzrn/dental-clinic-system-group
-- **CyberSafe PH** — https://github.com/jrsnzrn/CyberSafe
-- **Serin Calendar** — Local project; no public URL
-- **E-Commerce Website** — https://github.com/jrsnzrn/ecomerce_fullstack_v1
-- **Dental Clinic System** — https://github.com/jrsnzrn/dental-clinic-system
-- **Library Web System** — https://github.com/jrsnzrn/library-web-system
-- **Portfolio Website** — https://github.com/jrsnzrn/jrsnzrn.github.io
-
-CyberSafe PH is presented as an MVP with prototype admin screens. Serin Calendar is described from local source and has no demo or source button until a public URL is available.
+Push the changes to the GitHub branch configured as the GitHub Pages source. The website is hosted at https://jrsnzrn.github.io/.
