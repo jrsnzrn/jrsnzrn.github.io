@@ -57,4 +57,16 @@ If deployed using **GitHub Pages**, you can view the site here:
 
 https://jrsnzrn.github.io/
 
+## Project showcase
 
+The portfolio includes these seven entries. The group capstone and original dental clinic application are listed separately as distinct versions.
+
+- **Dental Clinic System — Group Capstone** — https://github.com/jrsnzrn/dental-clinic-system-group
+- **CyberSafe PH** — https://github.com/jrsnzrn/CyberSafe
+- **Serin Calendar** — Local project; no public URL
+- **E-Commerce Website** — https://github.com/jrsnzrn/ecomerce_fullstack_v1
+- **Dental Clinic System** — https://github.com/jrsnzrn/dental-clinic-system
+- **Library Web System** — https://github.com/jrsnzrn/library-web-system
+- **Portfolio Website** — https://github.com/jrsnzrn/jrsnzrn.github.io
+
+CyberSafe PH is presented as an MVP with prototype admin screens. Serin Calendar is described from local source and has no demo or source button until a public URL is available.

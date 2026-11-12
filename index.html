@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
-<title> Portfolio website</title>
+<title>Jairus Nazareno | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -68,7 +68,7 @@
                         </div>
                     
                     <p>IT student specializing in software development and cybersecurity.
-I hold certifications in Java programming and Cybersecurity, and I’m continuously building my skills through hands-on projects and practical learning.</p>
+I build web applications with React, Firebase, and ASP.NET Core, and explore cybersecurity and Android development through hands-on projects.</p>
                 
                     
                 <div class="social-links">
@@ -163,7 +163,7 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
           <div class="stat-card">
             <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
             <div class="stat-text">
-              <div class="stat-number">3+</div>
+              <div class="stat-number">7</div>
               <div class="stat-label">Projects</div>
             </div>
           </div>
@@ -284,79 +284,148 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
 
 
 
-<section class="projects" id="projects">
+<section class="projects" id="projects" aria-labelledby="projects-title">
   <div class="content">
-    <div class="title"><span>Projects</span></div>
-
+    <div class="title"><span id="projects-title">Projects</span></div>
+    <p class="projects-intro">A selection of my work across full-stack development, cybersecurity, and web and Android apps. Explore the source code and available live demos below.</p>
     <div class="cards">
-      
-      <!-- Dental Clinic System (Firebase) -->
-<div class="card project-card">
-  <div class="project-top">
-    <div class="project-icon"><i class="fa-solid fa-tooth"></i></div>
-    <div>
-      <h3>Dental Clinic System</h3>
-      <div class="project-tags">
-        <span class="tag">Firebase</span>
-        <span class="tag">Patient Records</span>
-        <span class="tag">Web App</span>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Web-based dental clinic system for patient management and visual tooth tracking.
-    Deployed with Firebase Hosting.
-  </p>
-
-  <div class="card-actions">
-    <a class="card-btn"
-       href="https://practicefirebase-e1c25.web.app/"
-       target="_blank" rel="noopener">
-      <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-    </a>
-
-    <a class="card-btn outline"
-       href="https://github.com/jrsnzrn/dental-clinic-system"
-       target="_blank" rel="noopener">
-      <i class="fa-brands fa-github"></i> Source Code
-    </a>
-  </div>
-</div>
-
-      <!-- Library Web System -->
-      <div class="card project-card">
+      <article class="card project-card">
         <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-book"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></div>
           <div>
-            <h3>Library Web System</h3>
+            <p class="project-category">Group capstone</p>
+            <h3>Dental Clinic System — Group Capstone</h3>
             <div class="project-tags">
-              <span class="tag">ASP.NET</span>
-              <span class="tag">CRUD</span>
-              <span class="tag">Web App</span>
+              <span class="tag">React</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Firestore</span>
             </div>
           </div>
         </div>
+        <p>An expanded dental clinic application with patient-facing booking and dental record pages, plus tools for clinic staff and administrators.</p>
+        <ul class="project-features">
+          <li>Appointment and patient record management</li>
+          <li>Payments, queue, reports, and analytics screens</li>
+          <li>Account management and protected routes</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn outline" href="https://github.com/jrsnzrn/dental-clinic-system-group" target="_blank" rel="noopener noreferrer" aria-label="View Dental Clinic System — Group Capstone source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
 
-        <p>
-          A web-based system for managing books, borrowing, and student records.
-          Designed to support efficient library operations.
-        </p>
-
-        <div class="card-actions">
-          <a class="card-btn outline"
-             href="https://github.com/jrsnzrn/library-web-system"
-             target="_blank" rel="noopener">
-            <i class="fa-brands fa-github"></i> Source Code
-          </a>
-        </div>
-      </div>
-
-      <!-- Portfolio Website -->
-      <div class="card project-card">
+      <article class="card project-card">
         <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-user"></i></div>
+          <div class="project-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
           <div>
+            <p class="project-category">Cybersecurity · MVP</p>
+            <h3>CyberSafe PH</h3>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">React Router</span>
+            </div>
+          </div>
+        </div>
+        <p>A scam and phishing awareness prototype focused on Filipino users, with explainable risk scoring for suspicious messages and links.</p>
+        <ul class="project-features">
+          <li>Message and link checks with scam classification</li>
+          <li>Awareness lessons, safety tips, and a quiz</li>
+          <li>Report form flow and admin dashboard prototypes</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn outline" href="https://github.com/jrsnzrn/CyberSafe" target="_blank" rel="noopener noreferrer" aria-label="View CyberSafe PH source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></div>
+          <div>
+            <p class="project-category">Web &amp; Android · Local project</p>
+            <h3>Serin Calendar</h3>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Capacitor</span>
+              <span class="tag">Local Storage</span>
+            </div>
+          </div>
+        </div>
+        <p>A personal scheduling app with day, week, and month views, packaged for the web and Android with Capacitor.</p>
+        <ul class="project-features">
+          <li>Recurring events with categories and custom colors</li>
+          <li>Reminder notifications and snooze controls</li>
+          <li>Events saved locally on the device</li>
+        </ul>
+        <p class="project-note">Local project · Public demo and source not published.</p>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-store" aria-hidden="true"></i></div>
+          <div>
+            <p class="project-category">Full-stack application</p>
+            <h3>E-Commerce Website</h3>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">Entity Framework</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+        <p>A full-stack shop connecting a JavaScript storefront to an ASP.NET Core API, with account access, a product catalog, and order management.</p>
+        <ul class="project-features">
+          <li>JWT login and role-based access</li>
+          <li>Product search, cart, and checkout flow</li>
+          <li>Order history and admin product management</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn outline" href="https://github.com/jrsnzrn/ecomerce_fullstack_v1" target="_blank" rel="noopener noreferrer" aria-label="View E-Commerce Website source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-tooth" aria-hidden="true"></i></div>
+          <div>
+            <p class="project-category">Original clinic application</p>
+            <h3>Dental Clinic System</h3>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Firebase Auth</span>
+              <span class="tag">Firestore</span>
+            </div>
+          </div>
+        </div>
+        <p>The original React and Firebase dental clinic project, with public service pages, appointment booking, and an authenticated admin area.</p>
+        <ul class="project-features">
+          <li>Patient records stored in Cloud Firestore</li>
+          <li>Booking management and admin dashboard</li>
+          <li>Deployed with Firebase Hosting</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn" href="https://practicefirebase-e1c25.web.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Dental Clinic System live demo"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+<a class="card-btn outline" href="https://github.com/jrsnzrn/dental-clinic-system" target="_blank" rel="noopener noreferrer" aria-label="View Dental Clinic System source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-book" aria-hidden="true"></i></div>
+          <div>
+            <p class="project-category">Academic web application</p>
+            <h3>Library Web System</h3>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Web Forms</span>
+              <span class="tag">C#</span>
+              <span class="tag">CRUD</span>
+            </div>
+          </div>
+        </div>
+        <p>An ASP.NET Web Forms library management project for organizing books, borrowing, and student records.</p>
+        <ul class="project-features">
+          <li>Library and record management workflows</li>
+          <li>User login and web forms interface</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn outline" href="https://github.com/jrsnzrn/library-web-system" target="_blank" rel="noopener noreferrer" aria-label="View Library Web System source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-top">
+          <div class="project-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+          <div>
+            <p class="project-category">Personal website</p>
             <h3>Portfolio Website</h3>
             <div class="project-tags">
               <span class="tag">HTML</span>
@@ -365,81 +434,15 @@ I hold certifications in Java programming and Cybersecurity, and I’m continuou
             </div>
           </div>
         </div>
-
-        <p>
-          Responsive personal portfolio with dropdown navigation, smooth scrolling,
-          and a typewriter hero animation. Optimized for GitHub Pages.
-        </p>
-
-        <div class="card-actions">
-          <a class="card-btn"
-             href="https://jrsnzrn.github.io"
-             target="_blank" rel="noopener">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-          </a>
-
-          <a class="card-btn outline"
-             href="https://github.com/jrsnzrn/jrsnzrn.github.io"
-             target="_blank" rel="noopener">
-            <i class="fa-brands fa-github"></i> Source Code
-          </a>
-        </div>
-      </div>
-
-      <!-- E-commerce Fullstack -->
-      <div class="card project-card">
-        <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-store"></i></div>
-          <div>
-            <h3>E-Commerce Website (Fullstack)</h3>
-            <div class="project-tags">
-              <span class="tag">Fullstack</span>
-              <span class="tag">Web App</span>
-              <span class="tag">API</span>
-            </div>
-          </div>
-        </div>
-
-        <p>
-          Full-stack e-commerce web application demonstrating frontend + backend integration.
-          Includes core shopping and store flows.
-        </p>
-
-        <div class="card-actions">
-          <a class="card-btn outline"
-             href="https://github.com/jrsnzrn/ecomerce_fullstack_v1"
-             target="_blank" rel="noopener">
-            <i class="fa-brands fa-github"></i> Source Code
-          </a>
-        </div>
-      </div>
-
-      <!-- Cybersecurity Mini Lab -->
-      <div class="card project-card">
-        <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div>
-            <h3>Cybersecurity Mini Lab</h3>
-            <div class="project-tags">
-              <span class="tag">Security</span>
-              <span class="tag">Logs</span>
-              <span class="tag">Networking</span>
-            </div>
-          </div>
-        </div>
-
-        <p>
-          A collection of basic security exercises including password policy checks,
-          network verification, and simple log review tasks.
-        </p>
-
-        <div class="card-actions">
-          <a class="card-btn outline" href="#" target="_blank" rel="noopener">
-            <i class="fa-solid fa-circle-info"></i> Details
-          </a>
-        </div>
-      </div>
-
+        <p>My responsive portfolio bringing together my software projects, certifications, skills, and contact information.</p>
+        <ul class="project-features">
+          <li>Responsive navigation and project showcase</li>
+          <li>Typewriter animation and section reveal effects</li>
+          <li>Static site built for GitHub Pages</li>
+        </ul>
+        <div class="card-actions"><a class="card-btn" href="https://jrsnzrn.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Open Portfolio Website live demo"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+<a class="card-btn outline" href="https://github.com/jrsnzrn/jrsnzrn.github.io" target="_blank" rel="noopener noreferrer" aria-label="View Portfolio Website source code"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a></div>
+      </article>
     </div>
   </div>
 </section>
